@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <form id="formulario">
+        <label for="Texto">Texto</label>
+        <input type="text" name="Texto" id="Texto">
+        <label for="Color">Color</label>
+        <select name="Color" id="Color">
+            <option value="amarillo">Amarillo</option>
+            <option value="rosa">Rosa</option>
+            <option value="azul">Azul</option>
+        </select>
+        <input type="submit" value="AGREGAR">
+    </form>
+
+    <section id="seccion">
+        <article class="notita rosa" id="0">
+            <strong onclick="borrarNotita(0)">X</strong>
+            <p>Cualquier texto</p>
+        </article>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
