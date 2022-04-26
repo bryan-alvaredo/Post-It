@@ -15,7 +15,7 @@ const crearNotita = (texto,color) => {
     elementoNuevo.id = contadorId;
     elementoNuevo.classList.add("notita");
     elementoNuevo.classList.add(color);
-    elementoNuevo.innerHTML = `<strong onclick="borrarNotita(${contadorId})">X</strong><p> ${texto} </p>`;
+    elementoNuevo.innerHTML = `<i class="fa-solid fa-xmark" onclick="borrarNotita(${contadorId})"></i><p> ${texto} </p>`;
     seccionNota.appendChild(elementoNuevo);
 }
 
