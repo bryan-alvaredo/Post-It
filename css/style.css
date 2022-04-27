@@ -33,6 +33,10 @@ body form {
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.86);
 }
 
+body form #boton {
+  cursor: pointer;
+}
+
 body #seccion {
   width: 90%;
   padding-top: 3rem;
@@ -67,24 +71,41 @@ body #seccion .notita {
 }
 
 body #seccion .notita i {
-  display: block;
-  text-align: right;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+  -webkit-transition: color, background-color, 0.3s;
+  transition: color, background-color, 0.3s;
 }
 
 body #seccion .notita p {
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
   margin: auto;
   text-align: center;
 }
 
 body #seccion .amarillo {
-  background-color: #ffff61;
+  background-color: #fcfc0e;
 }
 
 body #seccion .rosa {
-  background-color: pink;
+  background-color: #e23e9e;
 }
 
-body #seccion .azul {
-  background-color: lightblue;
+body #seccion .celeste {
+  background-color: #22faef;
+}
+
+body #seccion .verde {
+  background-color: #8ae008;
+}
+
+body #seccion .naranja {
+  background-color: #fca90f;
+}
+
+body #seccion .violeta {
+  background-color: #d526f8;
 }
 /*# sourceMappingURL=style.css.map */
